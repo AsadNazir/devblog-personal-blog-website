@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1100px) {
+    /* Changing Padding only */
+     :root {
+        --pdlr: clamp(0.5rem, 4vw, 10rem);
+    }
+    .article_heading {
+        font-size: calc(var(--fs3) - 0px);
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    /* Dispalying Menu Button */
+    .nav_items {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+    /* Removing Hero Right */
+    .right_hero {
+        display: none;
+    }
+    /* Centering Left Hero */
+    .left_hero {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_hero h1 {
+        text-align: center;
+    }
+    .hero_btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 300px;
+    }
+    .hero_btn a {
+        margin-right: 0;
+        padding: 0.6rem 1.5rem;
+    }
+    .hero {
+        padding: 3rem var(--pdlr);
+    }
+    .left_hero p {
+        margin: 1.7rem 0;
+        text-align: center;
+    }
+    /* Main Over here */
+    aside {
+        display: none;
+    }
+    .blog {
+        width: 100%;
+    }
+    /* Article Heading Font Size Fixing */
+    .article_heading {
+        font-size: calc(var(--fs3) - -2px);
+    }
+    /* Footer Over Here */
+    .footer_upper {
+        align-items: center;
+        padding: 0;
+        flex-direction: column;
+    }
+    .footer_box {
+        width: 60%;
+        text-align: center;
+        margin: 1.6rem 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .blog {
+        width: 94%;
+        margin: auto;
+        min-width: 250px;
+    }
+    .article {
+        display: block;
+    }
+}
